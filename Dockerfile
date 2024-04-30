@@ -7,7 +7,7 @@ WORKDIR /api_for_query_coury_data
 # Copy the current directory contents into the container at /app
 COPY app.py /api_for_query_coury_data/
 # Install any needed dependencies specified in requirements.txt
-RUN pip install -r ./requirements.txt
+RUN pip install -r requirements.txt
 
 
 # Run app.py when the container launches
