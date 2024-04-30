@@ -1,9 +1,17 @@
-FROM python:3.9-slim
-WORKDIR /api_for_query_coutry_data:
-COPY app.py /api_for_query_coutry_data/
-COPY requirements.txt /api_for_query_coutry_data/
-RUN pip install --upgrade pip setuptools wheel --user
-RUN pip install -r requirements.txt
-ENV TZ="Asia/Bangkok"
-CMD ["python","app.py"]
-EXPOSE 34567
+# Use an official Python runtime as a parent image
+FROM python:3.8-slim
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the current directory contents into the container at /app
+COPY . /app
+
+# Install any needed dependencies specified in requirements.txt
+RUN pip install -r /app/requirements.txt
+
+
+# Run app.py when the container launches
+CMD ["python", "app.py"]
+
+

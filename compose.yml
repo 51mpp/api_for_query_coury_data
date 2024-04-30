@@ -2,7 +2,7 @@ version: '3.8'
 services:
   api_for_query_coury_data:
     build: app
-    image: api_for_query_coury_data:1.0
+    image: api_for_query_coutry_data:1.0
     ports:
       - "34567:5000"
 
