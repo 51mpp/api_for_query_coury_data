@@ -4,6 +4,6 @@ services:
     build: .
     image: api_for_query_coutry_data:1.0
     ports:
-      - "34567:5000"
+      - "34567:34567"
 
 
