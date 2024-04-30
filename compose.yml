@@ -1,6 +1,6 @@
 version: '3.8'
 services:
   api:
-    build: ./app
+    build: app
     ports:
       - "34567:5000"
