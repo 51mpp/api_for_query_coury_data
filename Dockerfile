@@ -5,8 +5,7 @@ FROM python:3.8-slim
 WORKDIR /api_for_query_coury_data
 
 # Copy the current directory contents into the container at /app
-COPY . /app
-
+COPY app.py /api_for_query_coury_data/
 # Install any needed dependencies specified in requirements.txt
 RUN pip install -r /app/requirements.txt
 
