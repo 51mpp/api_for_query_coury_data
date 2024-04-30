@@ -2,7 +2,7 @@
 FROM python:3.8-slim
 
 # Set the working directory in the container
-WORKDIR /app
+WORKDIR /home/user01/api_for_query_coury_data/
 
 # Copy the current directory contents into the container at /app
 COPY . /app
